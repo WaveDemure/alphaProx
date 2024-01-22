@@ -71,11 +71,7 @@ form.addEventListener("submit", async (event) => {
 
 
     const url = search(address.value, searchEngine.value);
-    if (!url.includes(fetchCustomProtocol()+'://')) {
-        location.href = __uv$config.prefix + __uv$config.encodeUrl(url);
-    } else {
-        return
-    }
+    location.href = __uv$config.prefix + __uv$config.encodeUrl(url);
 });
 
 function resetSettings() {
