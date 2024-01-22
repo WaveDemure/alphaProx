@@ -1,10 +1,3 @@
-const Cusprotocol = "proxy";
-
-function fetchCustomProtocol() {
-    return Cusprotocol
-}
-
-
 "use strict";
 /**
  * @type {HTMLFormElement}
@@ -26,6 +19,12 @@ const error = document.getElementById("error");
  * @type {HTMLPreElement}
  */
 const errorCode = document.getElementById("error-code");
+
+const Cusprotocol = "proxy";
+
+function fetchCustomProtocol() {
+    return Cusprotocol
+}
 
 document.addEventListener('DOMContentLoaded', function () {
     function openExec() {
@@ -73,8 +72,3 @@ form.addEventListener("submit", async (event) => {
     const url = search(address.value, searchEngine.value);
     location.href = __uv$config.prefix + __uv$config.encodeUrl(url);
 });
-
-function resetSettings() {
-    localStorage.removeItem("animPlayed")
-}
-
