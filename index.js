@@ -1,4 +1,9 @@
-import { fetchCustomProtocol } from './protohandler.js'
+const Cusprotocol = "proxy";
+
+function fetchCustomProtocol() {
+    return Cusprotocol
+}
+
 
 "use strict";
 /**
