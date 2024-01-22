@@ -2,23 +2,23 @@
 /**
  * @type {HTMLFormElement}
  */
-const form = document.getElementById("uv-form");
+const form = document.getElementById("form");
 /**
  * @type {HTMLInputElement}
  */
-const address = document.getElementById("uv-address");
+const address = document.getElementById("address");
 /**
  * @type {HTMLInputElement}
  */
-const searchEngine = document.getElementById("uv-search-engine");
+const searchEngine = document.getElementById("search-engine");
 /**
  * @type {HTMLParagraphElement}
  */
-const error = document.getElementById("uv-error");
+const error = document.getElementById("error");
 /**
  * @type {HTMLPreElement}
  */
-const errorCode = document.getElementById("uv-error-code");
+const errorCode = document.getElementById("error-code");
 
 form.addEventListener("submit", async (event) => {
   event.preventDefault();
