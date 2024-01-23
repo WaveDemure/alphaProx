@@ -32,7 +32,7 @@ body {
     transform: translateX(-50%);
 }
 
-#form a {
+#form p {
     background-color: black;
     cursor: pointer;
     color: white;
