@@ -119,7 +119,7 @@
       })
       window.onload = function () {
         let encodedUrl = sessionStorage.getItem('ur')
-        encodedUrl = '/a/' + encodedUrl
+        encodedUrl = encodedUrl
         console.log(encodedUrl)
         document.querySelector('#iframeid').src = encodedUrl
         let iframe = document.querySelector('#iframeId')
