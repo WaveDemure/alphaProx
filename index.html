@@ -20,7 +20,7 @@
             <form id="form" class="flex-center">
                 <input id="search-engine" value="https://www.google.com/search?q=%s" type="hidden" />
                 <input id="address" type="text" placeholder="Search the web freely" />
-                <p class="help" onclick="alert(`This рro𝚡ｙ uses a custom protocol system\nopen ${Cusprotocol}:\/\/help`)">Need Help?</p>
+                <p class="help" onclick="document.getElementById('address').value = __protocoller$config.protocol+__protocoller$config.suffix+__protocoller$config.helpURI; document.getElementById('form').submit()">Need Help?</p>
             </form>
         <div class="icons">
             <a href=""><i class="fa fa-github" style="color: white; font-size: 3vw;"></i>            </a>
