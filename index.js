@@ -14,7 +14,7 @@ const searchEngine = document.getElementById("search-engine");
 
 function help() {
     document.getElementById('address').value = __protocoller$config.protocol+__protocoller$config.suffix+__protocoller$config.helpURI;
-    document.getElementById('form').submit();
+    test()
 }
 
 form.addEventListener("submit", async (event) => {
