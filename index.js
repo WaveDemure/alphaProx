@@ -12,6 +12,11 @@ const address = document.getElementById("address");
  */
 const searchEngine = document.getElementById("search-engine");
 
+function help() {
+    document.getElementById('address').value = __protocoller$config.protocol+__protocoller$config.suffix+__protocoller$config.helpURI;
+    document.getElementById('form').submit();
+}
+
 form.addEventListener("submit", async (event) => {
     event.preventDefault()
     var minEng = address.value.replace("https://www.google.com/search?q=%s", '')
